@@ -1,0 +1,259 @@
+<html>
+    
+ 
+ <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+    </head>
+   
+    <body style="background-color:#282828;">
+
+       <script type="application/processing">
+
+PImage img;
+PImage img2;
+PImage img3;
+PImage img4;
+PImage img5;
+
+
+
+void setup() {
+  size (1200, 750);
+  background(40);
+  img = loadImage("https://i.imgur.com/2yFjYww.png");
+  img2 = loadImage("https://i.imgur.com/3IKhBQ2.png");
+  img3 = loadImage("https://i.imgur.com/2SyMy6f.png");
+  img4 = loadImage("https://i.imgur.com/3IKhBQ2.png");
+  img5 = loadImage("https://i.imgur.com/a5kGqai.png");
+
+
+}
+
+void draw () {
+
+  ///Right Neg Space
+  if (mouseX > 750) {
+    if (mouseX < 1000) {
+      if (mouseY > 1) {
+        if (mouseY < 750) {  
+          image(img, 0, 0);
+        }
+      }
+    }
+  }
+
+  ///Top Neg Space
+  if (mouseX > 1) {
+    if (mouseX < 1000) {
+      if (mouseY > 1) {
+        if (mouseY < 200) {  
+          image(img, 0, 0);
+        }
+      }
+    }
+  }
+
+
+  ///Middle Neg Space
+  if (mouseX > 490) {
+    if (mouseX < 540) {
+      if (mouseY > 250) {
+        if (mouseY < 550) {  
+          image(img, 0, 0);
+        }
+      }
+    }
+  }
+
+
+
+  ///Doors
+  if (mouseX > 600) {
+    if (mouseX < 790) {
+      if (mouseY > 190) {
+        if (mouseY < 550) {  
+          image(img2, 0, 0);
+        }
+      }
+    }
+  }
+
+  ///Water
+  if (mouseX > 405) {
+    if (mouseX < 600) {
+      if (mouseY > 600) {
+        if (mouseY < 650) {  
+          image(img5, 0, 0);
+        }
+      }
+    }
+  }
+
+  ///Window
+  if (mouseX > 280) {
+    if (mouseX < 450) {
+      if (mouseY > 375) {
+        if (mouseY < 530) {  
+          image(img3, 0, 0);
+        }
+      }
+    }
+  }
+
+  ///Shelf
+  if (mouseX > 245) {
+    if (mouseX < 450) {
+      if (mouseY > 200) {
+        if (mouseY < 315) {  
+          image(img4, 0, 0);
+        }
+      }
+    }
+  } else {
+    image(img, 0, 0);
+  }
+}
+
+void mousePressed() {
+
+
+  ///Doors >> Directory
+  if (mouseX > 600) {
+    if (mouseX < 790) {
+      if (mouseY > 190) {
+        if (mouseY < 550) {  
+
+          link("https://toyhou.se/Lafarin/characters");
+        }
+      }
+    }
+  }
+
+  ///Water >> Contact
+  if (mouseX > 405) {
+    if (mouseX < 600) {
+      if (mouseY > 600) {
+        if (mouseY < 650) {  
+          link("https://lafarin.carrd.co");
+        }
+      }
+    }
+  }
+
+  ///Window >> Persona-verse
+  if (mouseX > 280) {
+    if (mouseX < 450) {
+      if (mouseY > 375) {
+        if (mouseY < 530) {  
+          link("https://toyhou.se/Lafarin/characters/folder:1221438");
+        }
+      }
+    }
+  }
+
+  ///Shelf - UFT/S/EO
+  if (mouseX > 245) {
+    if (mouseX < 450) {
+      if (mouseY > 200) {
+        if (mouseY < 315) {  
+          link("https://toyhou.se/~bulletins/112382.trading-thread");
+        }
+      }
+    }
+  }
+  ///CREDIT
+  if (mouseX > 270) {
+    if (mouseX < 295) {
+      if (mouseY > 555) {
+        if (mouseY < 608) {  
+          link("https://www.facebook.com/KottonHana/");
+        }
+      }
+    }
+  }
+
+  ///MESSAGE
+  if (mouseX > 960) {
+    if (mouseX < 1140) {
+      if (mouseY > 105) {
+        if (mouseY < 195) {  
+          link("https://toyhou.se/~messages/create/Lafarin");
+        }
+      }
+    }
+  }
+  ///SUBSCRIBE
+  if (mouseX > 960) {
+    if (mouseX < 1140) {
+      if (mouseY > 225) {
+        if (mouseY < 315) {  
+          link("https://toyhou.se/Lafarin/subscribe");
+        }
+      }
+    }
+  }
+
+  ///COMMENT
+  if (mouseX > 960) {
+    if (mouseX < 1140) {
+      if (mouseY > 345) {
+        if (mouseY < 435) {  
+          link("https://toyhou.se/Lafarin/comments");
+        }
+      }
+    }
+  }
+
+  ///WORLD
+  if (mouseX > 960) {
+    if (mouseX < 1140) {
+      if (mouseY > 465) {
+        if (mouseY < 555) {  
+          link("https://toyhou.se/Lafarin/worlds");
+        }
+      }
+    }
+  }
+
+  ///AUTHORISE
+  if (mouseX > 960) {
+    if (mouseX < 1140) {
+      if (mouseY > 585) {
+        if (mouseY < 675) {  
+          link("https://toyhou.se/Lafarin/authorize");
+        }
+      }
+    }
+  }
+
+
+  ///BLOCK
+  if (mouseX > 110) {
+    if (mouseX < 210) {
+      if (mouseY > 525) {
+        if (mouseY < 625) {  
+          link("https://toyhou.se/Lafarin/block");
+        }
+      }
+    }
+  }
+
+
+  ///REPORT
+  if (mouseX > 110) {
+    if (mouseX < 210) {
+      if (mouseY > 650) {
+        if (mouseY < 750) {  
+          link("https://toyhou.se/~tickets/create/user");
+        }
+      }
+    }
+  }
+}
+</script>
+<canvas> </canvas>
+    </body>
+    
+    
+    
+    
